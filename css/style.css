@@ -1,8 +1,28 @@
 /* Container Design */
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+[class*="col-"] {
+  /* height: 300px; */
   border: 1px solid black;
-  height: 300px;
+  background: pink;
 }
 /* End Container Design */
+
+/* Nested Column Design */
+.nested {
+
+}
+.nested>div {
+  border: 5px solid pink;
+  background-color: lightcoral;
+}
+/* End Nested Column Design */
+
+/* Text Design */
+p {
+  text-align: center;
+  margin: 150px auto;
+}
+/* EndText Design */

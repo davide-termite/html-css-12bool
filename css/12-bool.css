@@ -8,25 +8,29 @@
 
 /* Debug */
 /* .debug .container {
+  max-width: 1200px;
+  margin: 0 auto;
   border: 1px solid black;
 }
 .debug [class*="col-"]{
-  border: 1px solid black;
   height: 200px;
+  border: 1px solid black;
+  background: pink;
 } */
 /* End Debug */
 
 /*** 12-col Grid ***/
 /* Clearfix & Float */
-.container {
+/* Clearfix & Float */
+[class*="col-"]{
+  float: left;
+}
+.container::after {
   content: "";
   display: table;
   clear: both;
 }
-[class*="col-"]{
-  float: left;
-}
-/* End Clearfix & FLoat */
+/* End Clearfix & Float */
 
 /* Columns */
 .col-1 {
